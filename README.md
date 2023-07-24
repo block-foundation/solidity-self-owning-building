@@ -1,8 +1,8 @@
 <div align="right">
 
-  [![license](https://img.shields.io/github/license/block-foundation/manifesto?color=green&label=license&style=flat-square)](LICENSE.md)
-  ![stars](https://img.shields.io/github/stars/block-foundation/manifesto?color=blue&label=stars&style=flat-square)
-  ![contributors](https://img.shields.io/github/contributors/block-foundation/manifesto?color=blue&label=contributors&style=flat-square)
+  [![license](https://img.shields.io/github/license/block-foundation/solidity-self-owning-building?color=green&label=license&style=flat-square)](LICENSE.md)
+  ![stars](https://img.shields.io/github/stars/block-foundation/solidity-self-owning-building?color=blue&label=stars&style=flat-square)
+  ![contributors](https://img.shields.io/github/contributors/block-foundation/solidity-self-owning-building?color=blue&label=contributors&style=flat-square)
 
 </div>
 
@@ -10,7 +10,7 @@
 
 <div>
     <img align="right" src="https://raw.githubusercontent.com/block-foundation/brand/master/logo/logo_gray.png" width="96" alt="Block Foundation Logo">
-    <h1 align="left">Solidity Smart-Contract Template</h1>
+    <h1 align="left">Self-Owning Building</h1>
     <h3 align="left">Block Foundation Smart Contract Series [Solidity]</h3>
 </div>
 
@@ -39,6 +39,19 @@
 
 ## Introduction
 
+Blockchain Autonomous Building Management!
+
+Welcome to our revolutionary project - an autonomous building management system built on the Blockchain. The project integrates a unique blend of real estate management and blockchain technology, creating an ecosystem where a building can effectively "own" itself. This concept is a stepping stone to decentralized autonomous organizations (DAOs) and a significant leap forward for blockchain applications in real estate.
+
+Our autonomous building management system employs smart contracts to manage and oversee a building's fundamental operational aspects, including rent collection, maintenance costs, and ownership transfers. The smart contracts, which are blockchain's primary building blocks, are immutable, transparent, and verifiable pieces of code that automatically execute transactions when predefined conditions are met.
+
+In the context of our project, these smart contracts come to life as entities managing a building. They collect rent from tenants, pay maintenance costs, and can even transfer ownership when the building is bought. We implement penalty mechanisms for late payments, ensuring all stakeholders are held accountable.
+
+This system can have profound implications for reducing administrative overhead, increasing efficiency, and fostering a new level of transparency in the real estate sector.
+
+Please note, this project showcases the potential of blockchain technology. As with any significant technology implementation, thorough testing is required before actual use. Blockchain and smart contract technology is complex, and mistakes can lead to severe consequences, including loss of funds. Always consult with experts when interacting with such systems.
+
+Join us as we explore this unique amalgamation of blockchain and real estate, transforming the way we manage and interact with buildings in the future. Welcome to the future of autonomous building management!
 
 ## Quick Start
 
@@ -56,6 +69,17 @@ npm run compile
 
 ## Contract
 
+This is an example of a Solidity smart contract that represents a building that owns itself. This contract can be used to manage funds, pay for maintenance, collect rent, and sell ownership.
+
+This contract should be deployed by sending a transaction with enough value to cover the initial price, rent, and maintenance costs. The contract includes a timestamp for the last rent payment and the last maintenance payment, and it checks that the payments are not overdue before transferring ownership or withdrawing funds. The contract also requires an extra fee for late payments.
+
+It includes functionalities to:
+
+- Introduce a mechanism to penalize or evict tenants if they do not pay rent.
+- Prevent the building from falling into disrepair if the maintenance costs are not paid.
+- Handle outstanding rent payments or maintenance costs before the building can be sold.
+
+*Please note that this is still a simplified model, and real-world applications would require additional functionality and security measures. Also, the contract should be thoroughly tested before it's used in production. Always consult with a knowledgeable expert in blockchain and smart contract technology before deploying or interacting with smart contracts.*
 
 ## Development Resources
 
